@@ -1,9 +1,3 @@
----
-layout: page
-title: About
-permalink: /about/
----
-
 # Dong Jun Lee (Ace)
 **Bridging Biological Intelligence and Artificial Systems**
 
