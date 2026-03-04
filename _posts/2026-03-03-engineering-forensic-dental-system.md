@@ -7,31 +7,56 @@ tags: [flutter, android, gradle, dev-log]
 
 # Redefining Forensic Workflows through Code
 
-In the intersection of medical expertise and software engineering lies a powerful opportunity to solve critical real-world problems. My current project involves developing a **Centralized Dental Record & Identification System** in collaboration with the **National Forensic Service (NFS)**.
+At the intersection of medical expertise and software engineering lies a powerful opportunity to solve critical real-world problems. My current project is the development of a **Centralized Dental Record & Identification System**, built independently based on requirements provided by forensic dentists working within the **National Forensic Service (NFS)**.
 
 ## The Problem: Legacy and Fragmentation
-Forensic dental identification is a race against time. However, fragmented paper records and inconsistent data formats often slow down the process of matching unidentified remains with existing dental history. The need for a robust, cross-platform digital solution has never been more urgent.
+
+Forensic dental identification is often a race against time. However, fragmented paper records and inconsistent data formats frequently slow the process of matching unidentified remains with existing dental histories.  
+
+In many cases, identification depends not on the lack of information but on the **difficulty of structuring and accessing existing data**. The need for a robust, standardized digital system is therefore critical.
 
 ## The Solution: Why Flutter?
-For this project, I chose **Flutter** as the primary framework. The decision was driven by the need for cross-platform consistency and rapid prototyping of complex dental charting forms. But the choice brought its own set of engineering challenges.
 
-[Image of Android Build Process with Gradle]
+To address this challenge, I chose **Flutter** as the primary development framework. The decision was driven by the need for a cross-platform system capable of handling complex dental charting interfaces while maintaining consistency across devices.
 
-## Real-world Friction: Navigating 'Gradle Hell'
-As a developer aiming for the highest standards, I insisted on using the latest Google Android packages. This led me straight into what developers call **"Gradle Hell."** Aligning the **Android Gradle Plugin (AGP)**, Kotlin versions, and Flutter’s native bridge was a significant hurdle. 
+Flutter allows rapid iteration of structured dental data entry systems while maintaining a unified codebase for Android deployment.
 
-I spent countless nights debugging dependency resolution errors—where one package demanded a newer SDK while another was tethered to legacy structures. Handling **Namespace migrations** and fine-tuning **ProGuard/R8 rules** taught me that real-world engineering is as much about resilience and infrastructure management as it is about writing clean logic.
+However, the decision also introduced a series of engineering challenges within the Android build ecosystem.
+
+## Real-world Friction: Navigating "Gradle Hell"
+
+While attempting to maintain compatibility with the latest Android development standards, I encountered what many developers refer to as **"Gradle Hell."**
+
+Aligning the **Android Gradle Plugin (AGP)**, Kotlin versions, and Flutter’s native bridge required careful dependency management. Certain libraries demanded newer SDK targets, while others remained tied to older structures.
+
+Resolving these conflicts involved:
+
+- Migrating Android packages to the modern **namespace architecture**
+- Reconfiguring **Gradle dependency trees**
+- Adjusting **ProGuard/R8 rules** to ensure stable builds
+
+This experience reinforced an important lesson: real-world engineering is not only about writing application logic, but also about **maintaining stable infrastructure across evolving software ecosystems**.
 
 ## Technical Architecture
-The system is designed with a focus on data integrity. By leveraging a centralized database and building a structured schema for dental characteristics, we are moving toward an automated matching process.
 
-* **Frontend:** Flutter (Dart)
-* **Backend Logic:** Structured Java-based data processing
-* **Infrastructure:** Modular dependency management to mitigate future breaking changes
+The system architecture prioritizes **data integrity and structured medical information**.
 
-## Impact and Future Path: The Road to AI
-This app is more than a tool; it is a foundation for **Automated Identification**. As I refine the architecture, the next step is integrating **Computer Vision** to automate radiographic matching—a challenge that leads me directly into **Artificial Intelligence research**.
+By building a centralized database and defining a standardized schema for dental characteristics, the project aims to transform fragmented records into machine-readable forensic datasets.
+
+**Core stack**
+
+- **Frontend:** Flutter (Dart)
+- **Backend Processing:** Java-based data structuring
+- **Infrastructure:** Modular dependency management designed to minimize future breaking changes
+
+## Impact and Future Path: Toward Automated Identification
+
+This application represents more than a clinical tool. It forms the foundation for **automated forensic identification systems**.
+
+As the architecture matures, the next phase will involve integrating **computer vision techniques** to assist in radiographic comparison and pattern matching.
+
+Exploring these problems naturally leads toward **artificial intelligence research**, particularly in areas where structured medical data intersects with machine learning.
 
 ---
 
-*This project serves as the technical bridge between my clinical background and my future research goals at **MIT**.*
+*This project serves as a technical bridge between my clinical background in dentistry and my long-term goal of pursuing research in computer science, particularly in AI-driven forensic identification systems.*
