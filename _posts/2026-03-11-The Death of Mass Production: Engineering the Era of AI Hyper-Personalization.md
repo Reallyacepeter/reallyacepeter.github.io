@@ -88,5 +88,3 @@ Rather than designing technologies for the statistical average, engineers now ha
 Understanding how to design such systems responsibly will likely be one of the defining engineering challenges of the coming decades.
 
 ---
-
-*This post was drafted with AI assistance (Gemini) to refine structure and wording.*
