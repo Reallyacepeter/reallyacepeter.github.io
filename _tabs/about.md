@@ -5,34 +5,65 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-# Dong Jun Lee (Ace)
-**Bridging Biological Intelligence and Artificial Systems**
+# Dong Jun Lee
 
-I am a clinician-turned-engineer exploring the frontiers of Artificial Intelligence and System Architecture. With a background in Dental Medicine and a profound passion for computational logic, I aim to synthesize domain-specific expertise with scalable AI solutions.
-
-## 🚀 The Vision
-My journey is defined by a transition from **Biological Logic** to **Artificial Systems**. 
-
-As a dentist, I mastered the intricacies of human biological structures. Now, I am redirecting that analytical rigor toward Computer Science. My ultimate goal is to conduct advanced AI research at **MIT** and found a global IT enterprise that solves complex real-world problems through innovative software architecture.
-
-## 🧠 Core Competencies
-* **Strong Analytical Foundation:** High cognitive capacity (GAI 131) with a robust mathematical background.
-* **Engineering Mentality:** Proficient in **Java** structures and **Flutter** development.
-* **Domain Expertise:** Deep understanding of medical/dental data and its potential for digital transformation.
-
-## 🛠️ Current Projects
-Currently, I am developing a **Dental Record & Identification System** in collaboration with the National Forensic Service (NFS). This project leverages Flutter and centralized database structures to streamline critical forensic workflows.
-
-## 📚 What I Write About
-On this blog, I document my rigorous path toward a Master’s in Computer Science and my research notes on:
-* **AI & Machine Learning:** Breaking down papers and implementing algorithms.
-* **Software Architecture:** Designing robust, scalable systems in Java and Flutter.
-* **Entrepreneurship:** Insights on building a tech-driven global startup.
+Dentist building structured dental data systems  
+for forensic identification and future AI integration.
 
 ---
 
-*"The best way to predict the future is to design the systems that build it."*
+## What I Do
 
-**Feel free to reach out for research collaborations or tech discussions.**
+I design systems that transform clinical dental data  
+into structured, computable formats.
 
-[GitHub](https://github.com/reallyacepeter) | [Email](mailto:kb04042003@gmail.com)
+My current work focuses on building a mobile odontogram system  
+for forensic identification, where each interaction is treated  
+as a structured data event rather than a visual annotation.
+
+---
+
+## Why This Matters
+
+Dental data is widely used in forensic identification,  
+but most existing systems rely on fragmented and non-computable formats.
+
+I aim to address this gap by designing data architectures  
+that enable:
+
+- consistent data entry  
+- large-scale comparison  
+- integration with algorithmic and AI-based systems  
+
+---
+
+## Current Work
+
+- Mobile odontogram system (Flutter + Firebase)  
+- Hierarchical dental data modeling (Interpol-based structures)  
+- Multi-step data entry architecture with centralized state management  
+
+---
+
+## Background
+
+- Doctor of Dental Surgery (DDS)  
+- Strong analytical foundation (GAI 131)  
+- Transitioning from clinical practice to system design and AI  
+
+---
+
+## Writing
+
+This blog documents the design decisions, trade-offs,  
+and system architecture behind building computable dental data systems.
+
+---
+
+## Vision
+
+To make dental data fully computable  
+and enable scalable forensic and healthcare systems  
+powered by structured data and AI.
+
+---
