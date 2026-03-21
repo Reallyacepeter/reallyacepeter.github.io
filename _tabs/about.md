@@ -1,3 +1,10 @@
+---
+layout: page
+title: About
+icon: fas fa-info-circle
+order: 4
+---
+
 # Dong Jun Lee (Ace)
 **Bridging Biological Intelligence and Artificial Systems**
 
