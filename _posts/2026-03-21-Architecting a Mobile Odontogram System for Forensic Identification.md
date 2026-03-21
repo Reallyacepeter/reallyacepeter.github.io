@@ -11,9 +11,9 @@ Forensic identification often relies on dental records due to their durability a
 
 As a dentist and developer, I recognized a deeper issue:
 
-> Dental data exists, but it is not structured.
+> Dental data exists, but it is not structured in a way that is computable at scale.
 
-This project is an attempt to solve that problem.
+This project is an attempt to address that limitation by transforming dental records into a structured, machine-readable system.
 
 ---
 
@@ -25,8 +25,8 @@ However, a key question emerged:
 
 > Is this just a visual tool, or a data system?
 
-This led to a shift in approach:  
-the odontogram became a **data interface**, not just a UI component.
+This question led to a fundamental shift in approach.  
+Instead of treating the odontogram as a graphical interface, I redefined it as a **data interface**—a system where each interaction produces structured, meaningful data.
 
 ---
 
@@ -42,62 +42,107 @@ Each tooth is divided into five regions:
 - Bottom-right (BR)  
 - Bottom-left (BL)  
 
-Each interaction is treated as structured data input rather than a visual annotation.
+This design decision was not arbitrary.
+
+A single-point representation is insufficient for capturing localized dental findings,  
+while high-resolution segmentation introduces excessive UI complexity and data fragmentation.
+
+The 5-region model is a deliberate trade-off between spatial precision and computational simplicity.  
+It provides enough granularity to localize findings while maintaining a consistent and scalable data structure.
+
+Each interaction is therefore not a visual annotation, but a structured data event.
 
 ---
 
 ## Hierarchical Data Modeling
 
-Instead of free-text input, the system uses a structured coding hierarchy:
+Traditional dental records rely heavily on free-text descriptions.  
+While flexible, this approach lacks consistency and is not suitable for computational processing.
+
+To address this, the system adopts a hierarchical coding structure based on:
 
 - SystemCode  
 - Text  
 - Nat.Code  
 
-Categories include:
+These codes are organized into expandable categories such as:
 
 - Bite / Occlusion  
 - Bridges  
 - Fillings  
 - Periodontium  
 
-This approach ensures consistency, scalability, and machine readability.
+This approach enforces structure while preserving extensibility.
+
+It represents a deliberate shift:
+
+> from descriptive flexibility to machine readability.
+
+This trade-off is essential for enabling large-scale comparison and analysis in forensic contexts.
 
 ---
 
 ## System Architecture
 
+The system is built using:
+
 - **Frontend:** Flutter  
 - **Backend:** Firebase (Firestore + Storage)  
 - **State Management:** Provider  
 
-All data is managed in a centralized state and only persisted after a final review step.
+A centralized Provider-based architecture was chosen over route-based state management.
+
+In multi-step data entry systems, route-based approaches often lead to fragmented or inconsistent state.  
+By maintaining a single unified state object, the entire odontogram and associated metadata can be treated as a coherent dataset.
+
+Data is only persisted after a final review step, ensuring consistency and reducing partial or invalid entries.
 
 ---
 
 ## Key Challenges
 
 ### State Management
-Maintaining data consistency across multiple screens required a centralized architecture.
+
+Maintaining consistency across multiple input screens required a shift to centralized state management.  
+This was essential to prevent data loss and fragmentation.
+
+---
 
 ### UI Complexity
-Designing an interactive odontogram required balancing usability and precision.
+
+Designing an interactive odontogram required balancing usability and precision.  
+Increasing spatial resolution improves accuracy but introduces interaction complexity.
+
+---
 
 ### Data Modeling
-Mapping complex dental findings into structured data required iterative design.
+
+Dental findings are inherently complex and context-dependent.  
+Mapping them into a structured, hierarchical model required iterative refinement and domain-driven decisions.
 
 ---
 
 ## Future Directions
 
-- AI-based dental image analysis  
-- Automated identification systems  
-- Integration with large-scale forensic databases  
+This system is designed as a foundation rather than a final product.
+
+Future extensions include:
+
+- AI-based dental image (radiograph) analysis  
+- Automated matching between unidentified individuals and existing records  
+- Integration with large-scale forensic identification systems  
+
+The long-term goal is to enable dental data to function as a fully computable layer in identification workflows.
 
 ---
 
 ## Conclusion
 
-This project is not just an application.
+This project began as an attempt to digitize an odontogram.
 
-It is an attempt to redefine how dental data is structured, stored, and utilized.
+It evolved into something more fundamental:
+
+> a system that treats dental data as structured, computable information.
+
+By prioritizing consistency, scalability, and machine readability,  
+this work aims to redefine how dental records are created, stored, and utilized in forensic contexts.
