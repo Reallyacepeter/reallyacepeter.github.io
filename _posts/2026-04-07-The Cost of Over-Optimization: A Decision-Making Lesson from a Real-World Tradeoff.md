@@ -1,6 +1,6 @@
 ---
 title: "The Cost of Over-Optimization: A Decision-Making Lesson from a Real-World Tradeoff"
-date: 2026-04-07 20:40:00 +0900
+date: 2026-04-07 09:00:00 +0900
 categories: [AI, Decision-Making, Software Engineering]
 tags: [decision-theory, optimization, expected-value, loss-aversion, system-design]
 ---
